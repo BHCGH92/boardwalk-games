@@ -1,16 +1,17 @@
-/* Google Font */
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
 
 /* CSS Variables */
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Macondo", cursive;
-    --primary-color: #3a2620; /* Dark Brown */
-    --secondary-color: #aa9581; /* Light Brown */
-    --highlight-color: #416a8e; /* Blue */
-    --highlight-color-light: #7a9fe2; /* Light Blue */
-
+    --primary-color: #3a2620; /* dark brown */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
+
+/* Global styles */
 
 body {
     font-family: var(--primary-font);
@@ -21,20 +22,21 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
-}
-
-p {
-    border: 2px solid var(--primary-color);
+    text-transform: uppercase;
 }
 
 .sub-heading-color {
     color: var(--highlight-color);
+}
 
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Navbar */
 
-.navbar {
+#navbar {
     background-color: var(--primary-color);
 }
 
@@ -42,10 +44,15 @@ p {
     width: 30px;
 }
 
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+}
+
 /* grid visualisation CSS for testing */
 
-/*
-.container,
+/* .container,
 .row {
     border: 2px solid black;
 }
@@ -53,6 +60,4 @@ p {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-}
-
-*/
+} */
