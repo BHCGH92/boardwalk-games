@@ -32,6 +32,16 @@ p {
 
 }
 
+/* Navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 30px;
+}
+
 /* grid visualisation CSS for testing */
 
 /*
