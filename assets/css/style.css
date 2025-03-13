@@ -42,6 +42,11 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.background-color-highlight {
+    background-color: var(--highlight-color);
+    border: var(--highlight-color);
+}
+
 /* Buttons */
 
 .custom-button-filled {
@@ -102,6 +107,24 @@ h2 {
     border: none;
 }
 
+/* Join our events section */
+
+
+.custom-highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--highlight-color) !important;
+    border-radius: 0 !important;
+    max-height: 40px;
+    font-size: small;
+    text-align: center !important;
+}
+
+#events-bar {
+    background-color: var(--highlight-color);
+}
+
 /* Footer / contact */
 
 #contact {
@@ -152,11 +175,36 @@ h2 {
 
 /* Media queries */
 
+
+/* Small Screen Tables - 320px */
+@media (max-width: 320px) {
+    table {
+      font-size: 12px;
+    }
+    th, td {
+      padding: 5px;
+    }
+  }
+
+
 /* Medium devices (tablets, 768px and up) */
+
 @media screen and (min-width: 768px) {
     /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
+    }
+    .custom-highlight {
+        max-width: 40%;
+        margin: 0 auto;  /* Centers the div itself */
+        display: flex;
+        justify-content: center;  /* Centers text horizontally */
+        align-items: center;  /* Centers text vertically */
+        background-color: var(--highlight-color) !important;
+        border-radius: 0 !important;
+        max-height: 40px;
+        font-size: small;
+        text-align: center !important;
     }
 }
 
@@ -173,6 +221,18 @@ h2 {
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 220px;
+    }
+    .custom-highlight {
+        max-width: 50%;
+        margin: 0 auto;  /* Centers the div itself */
+        display: flex;
+        justify-content: center;  /* Centers text horizontally */
+        align-items: center;  /* Centers text vertically */
+        background-color: var(--highlight-color) !important;
+        border-radius: 0 !important;
+        max-height: 40px;
+        font-size: small;
+        text-align: center !important;
     }
 }
 
