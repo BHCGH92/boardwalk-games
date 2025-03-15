@@ -117,9 +117,15 @@ html, body {
 
 
 .custom-highlight {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: var(--highlight-color) !important;
     border-radius: 0 !important;
     max-height: 40px;
@@ -156,6 +162,8 @@ html, body {
 #contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -166,18 +174,6 @@ html, body {
 #contact .table-dark * {
     background-color: transparent;
 }
-
-/* grid visualisation CSS for testing */
-
-/* .container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-} */
 
 /* Media queries */
 
@@ -203,9 +199,15 @@ html, body {
     .custom-highlight {
         max-width: 40%;
         margin: 0 auto;  /* Centers the div itself */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;  /* Centers text horizontally */
-        align-items: center;  /* Centers text vertically */
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;  /* Centers text horizontally */
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;  /* Centers text vertically */
         background-color: var(--highlight-color) !important;
         border-radius: 0 !important;
         max-height: 40px;
@@ -231,9 +233,15 @@ html, body {
     .custom-highlight {
         max-width: 50%;
         margin: 0 auto;  /* Centers the div itself */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;  /* Centers text horizontally */
-        align-items: center;  /* Centers text vertically */
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;  /* Centers text horizontally */
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;  /* Centers text vertically */
         background-color: var(--highlight-color) !important;
         border-radius: 0 !important;
         max-height: 40px;
